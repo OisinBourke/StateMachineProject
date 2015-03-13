@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{4C78DE41-7A9F-7DAA-85A6-513FC0D2CEB1}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_3;UNITY_4_6;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_IL2CPP;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;UNITY5_SCRIPTING_IN_UNITY4;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\StateMachines\DoorClosed.cs" />
+     <Compile Include="Assets\Scripts\StateMachines\DoorClosedLeft.cs" />
+     <Compile Include="Assets\Scripts\StateMachines\DoorLeft.cs" />
+     <Compile Include="Assets\Scripts\StateMachines\DoorOpened.cs" />
+     <Compile Include="Assets\Scripts\StateMachines\DoorOpenedLeft.cs" />
+     <Compile Include="Assets\Scripts\StateMachines\DoorReClose.cs" />
+     <Compile Include="Assets\Scripts\StateMachines\DoorReCloseLeft.cs" />
+     <Compile Include="Assets\Scripts\StateMachines\DoorRight.cs" />
+     <Compile Include="Assets\Scripts\StateMachines\State.cs" />
+     <Compile Include="Assets\Scripts\StateMachines\StateMachine.cs" />
+     <Compile Include="Assets\pauls stuff\11 - Raycasting\Bomb.cs" />
+     <Compile Include="Assets\pauls stuff\11 - Raycasting\ClickyThing.cs" />
+     <Compile Include="Assets\pauls stuff\11 - Raycasting\Parachute.cs" />
+     <Compile Include="Assets\pauls stuff\12 - Enum, Switch\Interactions.cs" />
+     <Compile Include="Assets\pauls stuff\12 - Enum, Switch\Keycards.cs" />
+     <Compile Include="Assets\pauls stuff\12 - Enum, Switch\SpawnManager.cs" />
+     <Compile Include="Assets\pauls stuff\12 - Enum, Switch\Spawner.cs" />
+     <Compile Include="Assets\pauls stuff\12 - Enum, Switch\Switch.cs" />
+     <Compile Include="Assets\pauls stuff\13 - State Machine &amp; NavMesh\Enemie.cs" />
+     <Compile Include="Assets\pauls stuff\13 - State Machine &amp; NavMesh\EnemyState.cs" />
+     <Compile Include="Assets\pauls stuff\13 - State Machine &amp; NavMesh\Turret.cs" />
+     <Compile Include="Assets\pauls stuff\2 - Syntax, Variables, If Statements\FoodTemp.cs" />
+     <Compile Include="Assets\pauls stuff\2 - Syntax, Variables, If Statements\LightChallenge.cs" />
+     <Compile Include="Assets\pauls stuff\2 - Syntax, Variables, If Statements\Variables.cs" />
+     <Compile Include="Assets\pauls stuff\3 - Vectors &amp; Input\DistanceThingy.cs" />
+     <Compile Include="Assets\pauls stuff\3 - Vectors &amp; Input\Distances.cs" />
+     <Compile Include="Assets\pauls stuff\3 - Vectors &amp; Input\HoppyChallenge.cs" />
+     <Compile Include="Assets\pauls stuff\3 - Vectors &amp; Input\Inputs.cs" />
+     <Compile Include="Assets\pauls stuff\3 - Vectors &amp; Input\Loopies.cs" />
+     <Compile Include="Assets\pauls stuff\3 - Vectors &amp; Input\Movement.cs" />
+     <Compile Include="Assets\pauls stuff\3 - Vectors &amp; Input\PingPong.cs" />
+     <Compile Include="Assets\pauls stuff\4 - Loops\ForLoop.cs" />
+     <Compile Include="Assets\pauls stuff\4 - Loops\LoopieLoop.cs" />
+     <Compile Include="Assets\pauls stuff\4 - Loops\LoopsBasic.cs" />
+     <Compile Include="Assets\pauls stuff\5 - Classes, Funtions\Functions.cs" />
+     <Compile Include="Assets\pauls stuff\5 - Classes, Funtions\InheritedClassStructure\Bullets.cs" />
+     <Compile Include="Assets\pauls stuff\5 - Classes, Funtions\InheritedClassStructure\Enemies.cs" />
+     <Compile Include="Assets\pauls stuff\5 - Classes, Funtions\InheritedClassStructure\Goblin.cs" />
+     <Compile Include="Assets\pauls stuff\5 - Classes, Funtions\InheritedClassStructure\Orc.cs" />
+     <Compile Include="Assets\pauls stuff\5 - Classes, Funtions\MaceOfFaceOwninG.cs" />
+     <Compile Include="Assets\pauls stuff\5 - Classes, Funtions\SingleClassStructure\Bullet.cs" />
+     <Compile Include="Assets\pauls stuff\5 - Classes, Funtions\SingleClassStructure\Enemy.cs" />
+     <Compile Include="Assets\pauls stuff\5 - Classes, Funtions\SingleClassStructure\Inventory.cs" />
+     <Compile Include="Assets\pauls stuff\5 - Classes, Funtions\SingleClassStructure\Move.cs" />
+     <Compile Include="Assets\pauls stuff\5 - Classes, Funtions\SingleClassStructure\ScoreManager.cs" />
+     <Compile Include="Assets\pauls stuff\5 - Classes, Funtions\SingleClassStructure\Shoot.cs" />
+     <Compile Include="Assets\pauls stuff\5 - Classes, Funtions\SwordOfDemonicPossession.cs" />
+     <Compile Include="Assets\pauls stuff\5 - Classes, Funtions\Weapon.cs" />
+     <Compile Include="Assets\pauls stuff\6 - Rigidbodies\Ball.cs" />
+     <Compile Include="Assets\pauls stuff\6 - Rigidbodies\RigidBodies.cs" />
+     <Compile Include="Assets\pauls stuff\7 - Dot Product\Perception.cs" />
+     <Compile Include="Assets\pauls stuff\8 - Platformer Controls\CameraFollow.cs" />
+     <Compile Include="Assets\pauls stuff\8 - Platformer Controls\EnemyStats.cs" />
+     <Compile Include="Assets\pauls stuff\8 - Platformer Controls\PlayerMovementNoAnim.cs" />
+     <Compile Include="Assets\pauls stuff\8 - Platformer Controls\PlayerStats.cs" />
+     <Compile Include="Assets\pauls stuff\8 - Platformer Controls\Timer.cs" />
+     <Compile Include="Assets\pauls stuff\9 - Lab Test\Chimneys.cs" />
+     <Compile Include="Assets\pauls stuff\9 - Lab Test\Entities.cs" />
+     <Compile Include="Assets\pauls stuff\9 - Lab Test\Presents.cs" />
+     <Compile Include="Assets\pauls stuff\9 - Lab Test\RoofTop.cs" />
+     <Compile Include="Assets\pauls stuff\9 - Lab Test\Santa.cs" />
+     <Compile Include="Assets\pauls stuff\9 - Lab Test\Snow.cs" />
+     <Compile Include="Assets\pauls stuff\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.3/UnityEngine.UI.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
