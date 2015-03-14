@@ -14,6 +14,7 @@ public class DoorClosed : State { //inherit from State.cs
 	{
 		//Debug.Log ("I'm closed!");
 		target = GameObject.FindWithTag("Player");
+        Debug.Log("DoorClosed State is Active");
 	}
 	public override void Update ()
 	{	
@@ -27,6 +28,7 @@ public class DoorClosed : State { //inherit from State.cs
 	}
 	public override void Exit ()
 	{
+        Debug.Log("DoorClosed State is Exiting");
 		//Debug.Log ("Player detected, proceed to open!");
 	}
 }

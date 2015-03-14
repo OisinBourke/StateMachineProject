@@ -7,21 +7,24 @@ public class DoorReClose : State {
     public DoorReClose(GameObject myGameObject)
         : base(myGameObject) 
         //constructor that needs the same argument as the State base class constructor. use :base(GameObject) to inherit the same myGameObject reference, so this class can access the gameobject it's refereing to
-	{
-	
-		
+	{	
 	}   
     public override void Enter()
     {
-        target = GameObject.FindWithTag("Player");  
+        target = GameObject.FindWithTag("Player");
+        Debug.Log("DoorReClose State is Active");
     }
     public override void Update()
     {
-        myGameObject.transform.Translate(-Vector3.right * 10 * Time.deltaTime);
+        if (myGameObject.transform.position.x > 0f)
+        {
+            myGameObject.transform.Translate(-Vector3.right * 10 * Time.deltaTime);
+        }
+        
 
     }
     public override void Exit()
     {
-
+        Debug.Log("DoorReClose State is Exiting");
     }
 }
